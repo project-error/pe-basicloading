@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.1.0/dist/markdown-it.min.js" integrity="sha256-BKxj548mGdiiZTsqM2Wap0CNdlGE3tfFFWqGmhr59Xs=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <title>PE-LOADING-SCREEN</title>
+</head>
+<body>
+    <div id="container">
+        <div id="cursor"></div>
+        <div id="bgImg"></div>
+        <div id="tip-container">
+            <div class="header-container">
+                <div class="header-text" id="tip-header"></div>
+                <div class="spinner-container">
+                    <div id="spinner"></div>
+                </div>
+            </div>
+            <div class="tip-text" id="tip-content"></div>
+            <div class="hint-help-wrapper">
+                <span class="material-icons-outlined md-light md-24">
+                    chevron_left
+                </span>
+                <span class="hint-help-text" id="hint-help-text">
+
+                </span>
+                <span class="material-icons-outlined md-light md-24">
+                    chevron_right
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js" type="module"></script>
+</body>
+</html>
