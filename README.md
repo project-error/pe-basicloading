@@ -13,7 +13,10 @@ A very basic, yet still robust and extendable, loading screen.
 ![Discord](https://img.shields.io/discord/791854454760013827?label=Our%20Discord)
 </div>
 
-![preview](https://i.imgur.com/aivxpfx.gif)
+<div align="center">
+
+   You can find a short preview video [here](https://i.imgur.com/aivxpfx.gifv) 
+</div>
 
 ## Features
 * Customizable tip section that can be switched through 
