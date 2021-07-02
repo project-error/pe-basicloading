@@ -31,7 +31,20 @@ A very basic, yet still robust and extendable, loading screen.
 
 *Note: This resource uses the `MANUAL_SHUTDOWN` feature. You can learn more about that [here]()*
 
-### Customize
+## Config Options
+
+The config can be found in `web/config.js`. This holds a plethora of configuration options.
+
+| Option | Description | Example
+| --- | --- | --- |
+| LOADSCREEN_TIPS | An array of `TipObjects` for displaying in the loading screen | [Here](https://github.com/project-error/pe-basicloading/blob/db5837df618a9d9fd6a4cd2a218bb91e81a359b7/web/config.js#L7)|
+| TIP_CHANGE_INTERVAL  | The interval (ms) at which Tips change automatically | `TIP_CHANGE_INTERVAL = 12000` |
+| BACKGROUND_CHANGE_INTERVAL | The interval (ms) at which backgrounds automatically switch | `BACKGROUND_CHANGE_INTERVAL = 15000` |
+| BACKGROUND_IMAGES | An array of file names for images present in the `web/backgrounds` folder. | `BACKGROUND_IMAGES = ["1.jpg","2.jpg"]`
+| ENABLE_CURSOR | Whether to enable the cursor while in the loading screen | `ENABLE_CURSOR = false`
+| ENABLE_GFM_MARKDOWN | Whether to enable the `Github Flavored Markdown` spec for the parser | `ENABLE_GFM_MARKDOWN = true`
+
+## Customize
 
 ### Adding Backgrounds
 
