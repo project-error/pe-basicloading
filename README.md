@@ -23,6 +23,7 @@ A very basic, yet still robust and extendable, loading screen.
 * Markdown support for tip section content. Also allows for navigation using the **Left** and **Right** arrow keys
 * Customizable animated backgrounds that smoothly transition
 * CSS/JS cursor implementation, allowing for its use while loading
+* Special markdown link parsing allowing for users to click on markdown links that will open in the user's default browser
 
 ## Quick Start
 1. Download the latest release from [here](https://github.com/project-error/pe-basicloading/releases/)
