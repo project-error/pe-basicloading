@@ -48,7 +48,7 @@ export const BACKGROUND_IMAGES = [
 ]
 
 // Whether we should enable the cursor for the loadscreen
-export const ENABLE_CURSOR = false
+export const ENABLE_CURSOR = true
 
 // Enable github flavored markdown
 export const ENABLE_GFM_MARKDOWN = false

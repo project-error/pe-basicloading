@@ -1,14 +1,6 @@
 import {ENABLE_GFM_MARKDOWN, LOADSCREEN_TIPS} from "../config.js";
 import {cleanUrl} from "./utils.js";
 
-// We enable all settings for now
-const md = window.markdownit({
-  html: true,
-  linkify: true,
-  typographer: true,
-  gfm: ENABLE_GFM_MARKDOWN
-})
-
 window.__openUrl = (url) => window.invokeNative ? window.invokeNative('openUrl', url) : window.open(url)
 
 const renderer = {
