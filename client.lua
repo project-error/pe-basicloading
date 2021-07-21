@@ -10,8 +10,8 @@ local function shutdownHandler()
   end)
 end
 
---if not disableManualShutdown then
---  AddEventHandler('playerSpawned', shutdownHandler)
---end
+if not disableManualShutdown then
+  AddEventHandler('playerSpawned', shutdownHandler)
+end
 
 exports('shutdown', shutdownHandler)
