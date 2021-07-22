@@ -142,6 +142,13 @@ window.addEventListener('message', (e) => {
   }
 })
 
+// Setup left and right click handlers
+const leftArrow = document.getElementById('tip-left-arrow')
+const rightArrow = document.getElementById('tip-right-arrow')
+
+leftArrow.addEventListener('click', showPrevTip)
+rightArrow.addEventListener('click', showNextTip)
+
 if (ENABLE_CURSOR) {
   const cursor = document.getElementById('cursor')
 

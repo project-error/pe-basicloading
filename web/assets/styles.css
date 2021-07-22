@@ -157,3 +157,11 @@ a[onclick] {
   animation: spinner 1s linear infinite;
 }
 
+.arrow-control {
+  user-select: none;
+}
+
+.arrow-control:hover {
+  cursor: pointer;
+}
+

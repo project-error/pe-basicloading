@@ -23,7 +23,7 @@ export const LOADSCREEN_TIPS = [
   },
   {
     title: 'Markdown Render',
-    content: '**This is bold**. But this is not.  [This is a link!](https://github.com/project-error/pe-basicloadscreen/#)'
+    content: '**This is bold**. But this is not.  [This is a link!](https://github.com/project-error/pe-basicloading)'
   }
 ];
 
