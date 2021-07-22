@@ -3,10 +3,13 @@ import {
   BACKGROUND_CHANGE_INTERVAL,
   BACKGROUND_IMAGES,
   ENABLE_CURSOR,
-  SERVER_LOGO_POSITION, ENABLE_SERVER_LOGO
+  SERVER_LOGO_POSITION,
+  ENABLE_SERVER_LOGO,
+  MUSIC_ENABLED
 } from '../config.js'
 
 import { parsedMdTips } from "./markdown_parser.js";
+import {startMusic, stopMusic} from "./music.js";
 
 /**
  * @typedef {Object} TooltipObject
@@ -96,10 +99,11 @@ const setRandomTip = () => {
 }
 
 /**
- * Fade out the whole loading screen container
+ * Shutdowns and cleanups loading frame
  **/
-const fadeoutLoadingScreen = () => {
+const cleanupLoadingScreen = () => {
   containerEL.fadeOut('slow')
+  if (MUSIC_ENABLED) stopMusic();
 }
 
 let currentBgIdx = 0
@@ -137,6 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
   setRandomTip()
   setupServerLogo()
   spinnerEl.fadeIn()
+  startMusic()
 })
 
 window.addEventListener('keydown', (e) => {
@@ -148,9 +153,9 @@ window.addEventListener('keydown', (e) => {
 })
 
 window.addEventListener('message', (e) => {
-  // We get this from the client scripts
+  // This is the shutdown message that is sent by client script
   if (e.data.fullyLoaded) {
-    return fadeoutLoadingScreen()
+    cleanupLoadingScreen()
   }
 })
 

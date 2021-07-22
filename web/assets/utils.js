@@ -25,3 +25,5 @@ export function cleanUrl(sanitize, base, href) {
   }
   return href;
 }
+
+export const getCurrentScriptsName = () => window.GetParentResourceName ? GetParentResourceName() : ''
