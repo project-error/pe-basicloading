@@ -41,10 +41,6 @@ export const BACKGROUND_IMAGES = [
   "2.jpg",
   "3.jpg",
   "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
-  "8.jpg"
 ]
 
 // Whether we should enable the cursor for the loadscreen
