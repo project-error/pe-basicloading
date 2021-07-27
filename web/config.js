@@ -31,12 +31,6 @@ export const LOADSCREEN_TIPS = [
 // this will automatically loop the file as well
 export const MUSIC_ENABLED = true
 
-// This is looking for the file within the `music/` directory
-export const MUSIC_FILE_NAME = 'example.ogg'
-
-// This should be a float from 0 - 1 representing the tracks volume
-export const MUSIC_VOLUME = 0.75
-
 // How long a tip is on screen before we aut omatically
 // go to the next one (ms)
 export const TIP_CHANGE_INTERVAL = 10000
