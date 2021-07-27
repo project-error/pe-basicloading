@@ -48,3 +48,6 @@ export const ENABLE_CURSOR = true
 
 // Enable github flavored markdown
 export const ENABLE_GFM_MARKDOWN = false
+
+// Define server logo placement ['top-left', 'top-right', 'bottom-right', 'center']
+export const SERVER_LOGO_POSITION = 'center'

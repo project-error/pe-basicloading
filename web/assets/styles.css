@@ -73,6 +73,36 @@ a[onclick] {
   position: absolute;
 }
 
+#server-logo {
+  background:  url("./images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 15vh;
+  height: 15vh;
+  z-index: 2;
+}
+
+#server-logo.top-left {
+  top: 2.5vh;
+  left: 2.5vh;
+}
+
+#server-logo.top-right {
+  top: 2.5vh;
+  right: 2.5vh;
+}
+
+#server-logo.bottom-right {
+  bottom: 2.5vh;
+  right: 2.5vh;
+}
+
+#server-logo.center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;

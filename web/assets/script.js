@@ -2,7 +2,8 @@ import {
   TIP_CHANGE_INTERVAL,
   BACKGROUND_CHANGE_INTERVAL,
   BACKGROUND_IMAGES,
-  ENABLE_CURSOR
+  ENABLE_CURSOR,
+  SERVER_LOGO_POSITION
 } from '../config.js'
 
 import { parsedMdTips } from "./markdown_parser.js";
@@ -19,6 +20,7 @@ const hintHelpTxtEl = $('#hint-help-text')
 const containerEL = $('#container')
 const bgImgEl = $('#bgImg')
 const spinnerEl = $('#spinner')
+const logoEl = $('#server-logo')
 
 
 // We store the current tipInterval if any here
@@ -119,11 +121,19 @@ const startBackgroundInterval = () => {
   }, BACKGROUND_CHANGE_INTERVAL)
 }
 
+/*
+  Set Initial element class for server logo placement
+*/
+const setServerLogoPosition = () => {
+  logoEl.addClass(SERVER_LOGO_POSITION)
+}
+
 /* Listeners */
 
 window.addEventListener('DOMContentLoaded', () => {
   startBackgroundInterval()
   setRandomTip()
+  setServerLogoPosition()
   spinnerEl.fadeIn()
 })
 
