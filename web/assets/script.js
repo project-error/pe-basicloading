@@ -3,7 +3,7 @@ import {
   BACKGROUND_CHANGE_INTERVAL,
   BACKGROUND_IMAGES,
   ENABLE_CURSOR,
-  SERVER_LOGO_POSITION
+  SERVER_LOGO_POSITION, ENABLE_SERVER_LOGO
 } from '../config.js'
 
 import { parsedMdTips } from "./markdown_parser.js";
@@ -124,7 +124,9 @@ const startBackgroundInterval = () => {
 /*
   Set Initial element class for server logo placement
 */
-const setServerLogoPosition = () => {
+const setupServerLogo = () => {
+  if (!ENABLE_SERVER_LOGO) return;
+  logoEl.css('visibility', 'visible')
   logoEl.addClass(SERVER_LOGO_POSITION)
 }
 
@@ -133,7 +135,7 @@ const setServerLogoPosition = () => {
 window.addEventListener('DOMContentLoaded', () => {
   startBackgroundInterval()
   setRandomTip()
-  setServerLogoPosition()
+  setupServerLogo()
   spinnerEl.fadeIn()
 })
 

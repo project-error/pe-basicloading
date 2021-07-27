@@ -49,5 +49,9 @@ export const ENABLE_CURSOR = true
 // Enable github flavored markdown
 export const ENABLE_GFM_MARKDOWN = false
 
+// Enable or disable the included server logo to change this
+// logo simply switch the `logo.png` file with the image of your choice
+export const ENABLE_SERVER_LOGO = true
+
 // Define server logo placement ['top-left', 'top-right', 'bottom-right', 'center']
 export const SERVER_LOGO_POSITION = 'center'

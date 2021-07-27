@@ -74,8 +74,8 @@ a[onclick] {
 }
 
 #server-logo {
-  background:  url("./images/logo.png");
-  background-repeat: no-repeat;
+  background: url("./images/logo.png") no-repeat;
+  visibility: hidden;
   background-size: contain;
   position: absolute;
   width: 15vh;
