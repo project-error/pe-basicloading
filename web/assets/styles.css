@@ -138,7 +138,7 @@ a[onclick] {
   display: flex;
   flex-direction: column;
   position: fixed;
-  width: 1300px;
+  width: min(70vw, 1300px);
   height: 150px;
   padding: 20px;
   left: 50px;
