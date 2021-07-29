@@ -48,7 +48,7 @@ export const BACKGROUND_IMAGES = [
 export const MUSIC_ENABLED = true
 
 // The file name given to your music. This can be
-// a .ogg or an .mp3
+// a .ogg or an .mp3 (MUST BE PRESENT IN `music/` folder)
 export const MUSIC_FILE_NAME = 'music.mp3'
 
 export const MUSIC_START_VOLUME = 0.3
