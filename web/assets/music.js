@@ -8,16 +8,17 @@ export const startMusic = () => {
     playing = true
     music.volume = 0.1;
     document.addEventListener('keypress', (event) => {
-      if(event.key == "p") {
-        if(music.paused) {
-          music.play();
-        }else{
-          music.pause();
-        }
-      }else if(event.key == "s") {
-        music.volume = music.volume-0.05;
-      }else if(event.key == "w") {
-        music.volume = music.volume+0.05;
+      switch (event.code) {
+        case 'p':
+          if (music.paused) music.play();
+          else music.pause();
+          break;
+        case 'w':
+          music.volume += 0.05;
+          break;
+        case 's':
+          music.volume -= 0.05;
+          break;
       }
     });
   }
