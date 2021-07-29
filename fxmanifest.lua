@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Project Error'
 description 'A basic yet robust and extendable loading screen'
-version '1.0.0'
+version '1.2.0'
 repository 'https://github.com/project-error/pe-basicloading'
 
 loadscreen 'web/index.html'
