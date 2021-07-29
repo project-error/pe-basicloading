@@ -20,7 +20,7 @@ import {startMusic, stopMusic} from "./music.js";
 const headerEl = $('#tip-header')
 const contentEl = $('#tip-content')
 const hintHelpTxtEl = $('#hint-help-text')
-const containerEL = $('#container')
+const containerEL = $('#page-wrapper')
 const bgImgEl = $('#bgImg')
 const spinnerEl = $('#spinner')
 const logoEl = $('#server-logo')

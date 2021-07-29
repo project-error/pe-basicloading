@@ -14,13 +14,42 @@
     <title>PE-LOADING-SCREEN</title>
 </head>
 <body>
-    <audio id="loadscreen-music" autoplay="autoplay">
-        <source hidden="true" autostart="true" loop="true" src="./music/music.mp3" />
+    <audio id="loadscreen-music" autoplay="autoplay" autostart loop preload src="">
     </audio>
-    <div id="container">
+    <div id="page-wrapper">
         <div id="cursor"></div>
         <div id="bgImg"></div>
         <div id="server-logo"></div>
+        <div id="audio-controls">
+            <div class="header">Music Control</div>
+            <div class="audio-control-item">
+                <span class="material-icons-outlined md-primary md-26">
+                    volume_up
+                </span>
+                <div class="control-text">
+                    [W] - Volume Up
+                </div>
+            </div>
+            <div class="audio-control-item">
+                <span class="material-icons-outlined md-primary md-26">
+                    volume_down
+                </span>
+                <div class="control-text">
+                    [S] - Volume Down
+                </div>
+            </div>
+            <div class="audio-control-item">
+                <span class="material-icons-outlined md-primary md-26">
+                    pause
+                </span>
+                <div class="control-text">
+                    <div class="control-text">
+                        [P] - Play/Pause
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div id="tip-container">
             <div class="header-container">
                 <div class="header-text" id="tip-header"></div>
