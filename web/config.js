@@ -64,4 +64,7 @@ export const ENABLE_GFM_MARKDOWN = false
 export const ENABLE_SERVER_LOGO = true
 
 // Define server logo placement ['top-left', 'top-right', 'bottom-right', 'center']
-export const SERVER_LOGO_POSITION = 'top-right'
+export const SERVER_LOGO_POSITION = 'center'
+
+// The name of your logo file within "logo/" directory
+export const SERVER_LOGO_FILE_NAME = 'logo.png'

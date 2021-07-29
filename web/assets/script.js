@@ -5,7 +5,7 @@ import {
   ENABLE_CURSOR,
   SERVER_LOGO_POSITION,
   ENABLE_SERVER_LOGO,
-  MUSIC_ENABLED
+  MUSIC_ENABLED, SERVER_LOGO_FILE_NAME
 } from '../config.js'
 
 import { parsedMdTips } from "./markdown_parser.js";
@@ -130,6 +130,9 @@ const startBackgroundInterval = () => {
 */
 const setupServerLogo = () => {
   if (!ENABLE_SERVER_LOGO) return;
+  const logoLocation = `./logo/${SERVER_LOGO_FILE_NAME}`
+  logoEl.css('background', `url(${logoLocation})`)
+  logoEl.css('background-size', 'contain')
   logoEl.css('visibility', 'visible')
   logoEl.addClass(SERVER_LOGO_POSITION)
 }
