@@ -27,7 +27,7 @@ export const LOADSCREEN_TIPS = [
   }
 ];
 
-// How long a tip is on screen before we automatically
+// How long a tip is on screen before we aut omatically
 // go to the next one (ms)
 export const TIP_CHANGE_INTERVAL = 10000
 
@@ -43,6 +43,16 @@ export const BACKGROUND_IMAGES = [
   "4.jpg",
 ]
 
+// Whether music should be played while loading,
+// this will automatically loop the file as well
+export const MUSIC_ENABLED = true
+
+// The file name given to your music. This can be
+// a .ogg or an .mp3 (MUST BE PRESENT IN `music/` folder)
+export const MUSIC_FILE_NAME = 'music.mp3'
+
+export const MUSIC_START_VOLUME = 0.3
+
 // Whether we should enable the cursor for the loadscreen
 export const ENABLE_CURSOR = true
 
@@ -54,4 +64,4 @@ export const ENABLE_GFM_MARKDOWN = false
 export const ENABLE_SERVER_LOGO = true
 
 // Define server logo placement ['top-left', 'top-right', 'bottom-right', 'center']
-export const SERVER_LOGO_POSITION = 'center'
+export const SERVER_LOGO_POSITION = 'top-right'

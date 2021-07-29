@@ -46,6 +46,9 @@ The config can be found in `web/config.js`. This holds a plethora of configurati
 | ENABLE_GFM_MARKDOWN | Whether to enable the `Github Flavored Markdown` spec for the parser | `ENABLE_GFM_MARKDOWN = true`
 | ENABLE_SERVER_LOGO | Whether to enable the server logo | `ENABLE_SERVER_LOGO = true`
 | SERVER_LOGO_POSITION | Where to place logo if enabled | `SERVER_LOGO_POSITION = 'top-left'`
+| MUSIC_ENABLED | Enable loading music | `MUSIC_ENABLED = true `
+| MUSIC_START_VOLUME | The volume for loading music (0 - 1.0) | `MUSIC_START_VOLUME = 0.5`
+| MUSIC_FILE_NAME | The name of the music file to play in the "music/" folder | `MUSIC_FILE_NAME = music.mp3`
 
 ## Customize
 
