@@ -1,5 +1,5 @@
-import {ENABLE_GFM_MARKDOWN, LOADSCREEN_TIPS} from "../config.js";
-import {cleanUrl} from "./utils.js";
+import { ENABLE_GFM_MARKDOWN, LOADSCREEN_TIPS } from "../config.js";
+import { cleanUrl } from "./utils.js";
 
 window.__openUrl = (url) => window.invokeNative ? window.invokeNative('openUrl', url) : window.open(url)
 
@@ -22,6 +22,10 @@ const renderer = {
 }
 
 marked.use({ renderer })
+
+marked.setOptions({
+  gfm: ENABLE_GFM_MARKDOWN
+})
 
 export const parsedMdTips = LOADSCREEN_TIPS.map(({title, content}) => {
   const renderedMarkup = marked(content)
