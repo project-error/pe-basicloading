@@ -53,9 +53,6 @@ export const MUSIC_FILE_NAME = 'music.mp3'
 
 export const MUSIC_START_VOLUME = 0.3
 
-// Whether we should enable the cursor for the loadscreen
-export const ENABLE_CURSOR = true
-
 // Enable github flavored markdown
 export const ENABLE_GFM_MARKDOWN = false
 

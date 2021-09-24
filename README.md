@@ -42,7 +42,6 @@ The config can be found in `web/config.js`. This holds a plethora of configurati
 | TIP_CHANGE_INTERVAL  | The interval (ms) at which Tips change automatically | `TIP_CHANGE_INTERVAL = 12000` |
 | BACKGROUND_CHANGE_INTERVAL | The interval (ms) at which backgrounds automatically switch | `BACKGROUND_CHANGE_INTERVAL = 15000` |
 | BACKGROUND_IMAGES | An array of file names for images present in the `web/backgrounds` folder. | `BACKGROUND_IMAGES = ["1.jpg","2.jpg"]`
-| ENABLE_CURSOR | Whether to enable the cursor while in the loading screen | `ENABLE_CURSOR = false`
 | ENABLE_GFM_MARKDOWN | Whether to enable the `Github Flavored Markdown` spec for the parser | `ENABLE_GFM_MARKDOWN = true`
 | ENABLE_SERVER_LOGO | Whether to enable the server logo | `ENABLE_SERVER_LOGO = true`
 | SERVER_LOGO_POSITION | Where to place logo if enabled | `SERVER_LOGO_POSITION = 'top-left'`

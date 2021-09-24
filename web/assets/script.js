@@ -2,7 +2,6 @@ import {
   TIP_CHANGE_INTERVAL,
   BACKGROUND_CHANGE_INTERVAL,
   BACKGROUND_IMAGES,
-  ENABLE_CURSOR,
   SERVER_LOGO_POSITION,
   ENABLE_SERVER_LOGO,
   MUSIC_ENABLED, SERVER_LOGO_FILE_NAME
@@ -168,20 +167,3 @@ const rightArrow = document.getElementById('tip-right-arrow')
 
 leftArrow.addEventListener('click', showPrevTip)
 rightArrow.addEventListener('click', showNextTip)
-
-if (ENABLE_CURSOR) {
-  const cursor = document.getElementById('cursor')
-
-  cursor.style.visibility = 'visible'
-
-  window.addEventListener("mousemove", e => {
-    // These offsets are related to the size of the SVG
-    // for now this is fine
-    const x = e.pageX - cursor.offsetWidth + 20
-    const y = e.pageY - 2
-
-    cursor.style.left = `${x}px`
-    cursor.style.top = `${y}px`
-  })
-
-}

@@ -10,6 +10,8 @@ loadscreen 'web/index.html'
 
 client_script 'client.lua'
 
+loadscreen_cursor 'yes'
+
 loadscreen_manual_shutdown 'yes'
 
 files {
