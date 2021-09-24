@@ -124,7 +124,7 @@ behavior directly, use the following convars and exports
 
 `shutdown`
 * Description: Will shutdown the loading frame and cleanup.
-* Usage: `exports[pe-basicloading]:shutdown()`
+* Usage: `exports["pe-basicloading"]:shutdown()`
 
 ## License
 [Licensed under MIT](https://opensource.org/licenses/MIT)
