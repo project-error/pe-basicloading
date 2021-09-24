@@ -1,0 +1,32 @@
+name: Release Publisher
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  release:
+    name: Tagged Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref }}
+
+      - name: Get Version Tag
+        id: get_version_tag
+        run: echo ::set-output name=VERSION_TAG::${GITHUB_REF/refs\/tags\//}
+
+      - name: Create Release File
+        run: |
+          mkdir -p ./temp/pe-basicloading
+          cp -r ./{LICENSE,README.md,client.lua,fxmanifest.lua,web} ./temp/pe-basicloading
+          cd ./temp && zip -r pe-basicloading-${{ steps.get_version_tag.outputs.VERSION_TAG }}.zip ./pe-basicloading
+
+      - name: Create and Upload Release
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          files: ./temp/pe-basicloading-${{ steps.get_version_tag.outputs.VERSION_TAG }}.zip
