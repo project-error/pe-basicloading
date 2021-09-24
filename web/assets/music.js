@@ -1,4 +1,10 @@
-import {MUSIC_ENABLED, MUSIC_FILE_NAME, MUSIC_START_VOLUME, SERVER_LOGO_POSITION, ENABLE_SERVER_LOGO} from "../config.js";
+import {
+  MUSIC_ENABLED,
+  MUSIC_FILE_NAME,
+  MUSIC_START_VOLUME,
+  SERVER_LOGO_POSITION,
+  ENABLE_SERVER_LOGO
+} from "../config.js";
 
 const music = document.getElementById("loadscreen-music");
 const musicControls = document.getElementById("audio-controls")

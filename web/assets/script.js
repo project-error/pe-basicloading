@@ -8,7 +8,7 @@ import {
 } from '../config.js'
 
 import { parsedMdTips } from "./markdown_parser.js";
-import {startMusic, stopMusic} from "./music.js";
+import { startMusic, stopMusic } from "./music.js";
 
 /**
  * @typedef {Object} TooltipObject
