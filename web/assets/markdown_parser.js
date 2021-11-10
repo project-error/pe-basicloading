@@ -28,6 +28,6 @@ marked.setOptions({
 })
 
 export const parsedMdTips = LOADSCREEN_TIPS.map(({title, content}) => {
-  const renderedMarkup = marked(content)
-  return {title, content: renderedMarkup}
+  const rendered = window.marked.parse(content)
+  return {title, content: rendered}
 })
