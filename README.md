@@ -30,7 +30,7 @@ A very basic, yet still robust and extendable, loading screen.
 2. Unzip and drag the `pe-basicloading` folder into your `resources` directory
 3. Add `ensure pe-basicloading` to your `server.cfg`
 
-*Note: This resource uses the `MANUAL_SHUTDOWN` feature. You can learn more about that [here]()*
+*Note: This resource uses the `MANUAL_SHUTDOWN` feature. You can learn more about that [here](https://docs.fivem.net/natives/?_0x1722C938)*
 
 ## Config Options
 
