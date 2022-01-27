@@ -1,13 +1,11 @@
+local firstSpawn = false
 local disableManualShutdown = GetConvarInt('pe-basicloading:disableAutoShutdown', 0) == 1
 
 local function shutdownHandler()
-  CreateThread(function()
-    SendLoadingScreenMessage(json.encode({
-      fullyLoaded = true
-    }))
-    Wait(5000)
+    if firstSpawn then return end
+    firstSpawn = true
+    SendLoadingScreenMessage(json.encode({fullyLoaded = true}))
     ShutdownLoadingScreenNui(true)
-  end)
 end
 
 if not disableManualShutdown then
