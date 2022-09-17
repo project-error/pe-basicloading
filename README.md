@@ -10,7 +10,7 @@ A very basic, yet still robust and extendable, loading screen.
 <div align="center">
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/project-error/pe-basicloading/master/LICENSE)
-![Discord](https://img.shields.io/discord/791854454760013827?label=Our%20Discord)
+[![Discord](https://img.shields.io/discord/791854454760013827?label=Our%20Discord)](https://discord.gg/HYwBjTbAY5)
 </div>
 
 <div align="center">
